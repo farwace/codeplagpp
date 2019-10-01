@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<section id="head">
+    <div class="container">
+        <div class="row text-center align-middle">
+            <div class="col-sm-3 project-logo">
+                Code.plag<span class="orange">++</span>
+            </div>
+            <div class="col-sm-6 text-center project-tagline">
+                <span class="d-block">Антиплагиат для программистов.</span>
+                <span class="d-block">Проверь код на дубликаты.</span>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg"></div>
+<section id="main">
+    <div class="container main-block">
+        <div class="col-sm-10 offset-1 text-center">
+            <div class="main-title text-uppercase">
+                Загрузите файл для проверки
+            </div>
+            <form id="loadSource" action="../upload/check.php" method="post" enctype="multipart/form-data">
+                <label class="label input-file">
+                    <i class="material-icons">attach_file</i>
+                    <span class="title">Загрузите файл</span>
+                    <input type="file" required>
+                    <input type="submit" class="text-uppercase btn-orange" value="проверить">
+                </label>
+            </form>
+        </div>
+        <div class="form-shadow"></div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-footer">
+            <div class="col-sm-6 offset-3 rules">
+                © 2019, Все права защищены
+            </div>
+            <div class="col-sm-3 text-uppercase company">
+                <span class="logo-company"></span>
+                Universal Up
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

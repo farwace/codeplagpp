@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+/*  загрузите файл для проверки #474747
+    ++ #ff9c00
+    загрузите файл #d9d9d9
+    проверить другой файл #282828
+    свернуть подробности #dddbdb
+*/
+
+#head {
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 2px 7px -8px black
+}
+
+.project-logo {
+    padding-top: 13px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-tagline {
+    padding-top: 7px;
+    color: #474747;
+    font-size: 14px;
+}
+
+.orange {
+    color: #ff9c00;
+}
+
+.main-title {
+    font-size: 22px;
+    color: #474747;
+}
+
+#loadSourceCode input[type=file] {
+    outline: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none
+}
+
+#loadSourceCode {
+    padding-top: 15px;
+}
+
+label.input-file {
+    cursor: pointer;
+    width: 470px;
+    position: relative;
+    text-align: left;
+    border: 1px solid #aaaaaa;
+    border-radius: 25px;
+    height: 35px;
+    background-color: #ffffff
+}
+
+#loadSourceCode input[type='submit'] {
+    position: absolute;
+    right: 0;
+    margin: -1px -1px 0 0;
+}
+
+.btn-orange {
+    background-color: #ff9c00;
+    outline: none;
+    top: 0;
+    font-size: 11px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    width: 160px;
+    height: 35px;
+}
+
+.btn-orange:hover {
+    /*border: solid 5px black;*/
+    box-shadow: 0 0 5px 0 #ff9c00;
+}
+
+#loadSourceCode input[type='submit']:active {
+    outline: none;
+}
+
+#loadSourceCode .title {
+    font-size: 13px;
+    color: #d9d9d9;
+    margin-left: -5px;
+}
+
+#loadSourceCode i {
+    font-size: 20px;
+    transform: rotate(45deg);
+    color: #d9d9d9;
+    padding: 1px 2px 0 15px;
+}
+span.goback{
+    background-image: url(../images/goback.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 15px;
+    margin: 8px 0 0 -14px;
+}
+a.goback{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    padding-left: 15px;
+}
+a.goback:hover{
+    color: black;
+    text-decoration: none;
+}
+#main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+.main-block {
+    margin: auto;
+}
+
+.bg {
+    position: absolute;
+    width: 70%;
+    /*height: 100%;*/
+    height: calc(100% - 100px);
+    background: url("../images/background.png") no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.rules {
+    font-size: 14px;
+}
+
+.company {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-shadow {
+    background-image: url(../images/shadow.png);
+    width: 470px;
+    height: 50px;
+    background-size: cover;
+    margin: -45px auto auto auto;
+    top: 0;
+    z-index: -1;
+}
+
+/*.btn-shadow{
+    background-image: url(../shadow.png);
+    width: 150px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -10px auto auto auto;
+    top: 0;
+    z-index: -1;
+}*/
+.load-more {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    margin: -12px 0 0 -62px;
+    background-color: #ffffff;
+    padding: 0 5px 0 5px;
+}
+
+.load-more-icon {
+    background-image: url(../images/load-more-icon.png);
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50px;
+}
+
+.load-more:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-company {
+    background-image: url(../images/logo-company.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 0 -25px;
+    position: absolute;
+}
+
+#footer .text-footer {
+    padding-bottom: 15px;
+}
+
+a.link {
+    /*text-decoration: underline;*/
+    color: #5aa9fb;
+    border-bottom: solid 1px;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: #5aa9fb;
+}
+
+.main-block .row {
+    padding: 5px 0 5px 0;
+    box-shadow: 0 2px 8px -8px black;
+}
+
+.main-block .row:last-child {
+    padding-bottom: 20px;
+}
+
+.clear {
+    padding-top: 20px;
+}
+
+.red {
+    color: #f40101;
+    font-weight: bold;
+}
+
+.recommended {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -2px 7px -8px black;
+    padding-top: 15px;
+}
